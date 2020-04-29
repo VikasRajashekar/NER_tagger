@@ -12,7 +12,7 @@ def load_sentences(path, lower, zeros):
     """
     sentences = []
     sentence = []
-    for line in codecs.open(path, 'r', 'utf8'):
+    for line in codecs.open(path, 'r', 'latin-1'):
         line = zero_digits(line.rstrip()) if zeros else line.rstrip()
         if not line:
             if len(sentence) > 0:
