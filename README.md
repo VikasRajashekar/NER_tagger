@@ -46,7 +46,7 @@ Files used:
 3. Test: test.txt
 **Command to trigger the training on GPU:**
 
-THEANO_FLAGS='device=cuda,floatX=float32' python train.py --train deu_training.txt --dev deu_dev.txt --test deu_testa.txt
+THEANO_FLAGS='device=cuda,floatX=float32' python train.py --train train.txt --dev valid.txt --test test.txt
 
 **Results English:**
 
