@@ -1,8 +1,6 @@
 # Note: 
 **This is fork of repository(https://github.com/glample/tagger) with minor modifications for German language.**
 
-**For German data set, A small change in loader.py at line number: 15 is necessary. We need to use codecs of type "latin-1" because of German special letters.**
-
 
 **Set up instructions:**
 Conda environment setup:
