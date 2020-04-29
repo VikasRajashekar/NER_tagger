@@ -1,7 +1,7 @@
 # Note: 
 **This is fork of repository(https://github.com/glample/tagger) with minor modifications for German language.**
 
-**For German data set, A small change in loader.py at line number: 15 is necessary. We need to use codecs of type "latin-1" because of German special letters.
+**For German data set, A small change in loader.py at line number: 15 is necessary. We need to use codecs of type "latin-1" because of German special letters.**
 
 
 **Set up instructions:**
@@ -13,7 +13,11 @@ Following are the list of commands to be used to get the environment ready for t
 3.conda install theano \
 4.conda install -c mila-udem pygpu
 
-**German Dataset:**
+# German Dataset:
+
+
+**For German data set, A small change in loader.py at line number: 15 is necessary. We need to use codecs of type "latin-1" because of German special letters.**
+
 The dataset used is from the below link:\
 https://github.com/MaviccPRP/ger_ner_evals/tree/master/corpora/conll2003
 
@@ -24,11 +28,29 @@ The raw files are converted to txt files as required by the project.
 2. Development: deu.de --> deu_dev.txt
 3. Test: deu.testa --> deu_testa.txt
 
-**Command to trigger the training:**
+**Command to trigger the training on GPU:**
 
 THEANO_FLAGS='device=cuda,floatX=float32' python train.py --train deu_training.txt --dev deu_dev.txt --test deu_testa.txt
 
-**Results:**
+**Results German:**
+
+
+# English Dataset:
+
+**For German data set, A small change in loader.py at line number: 15 is necessary. We need to use codecs of type "utf8" because of German special letters.**
+
+The data set is from the below link:\
+https://github.com/davidsbatista/NER-datasets/tree/master/CONLL2003
+
+Files used:
+1. Training: train.txt
+2. Development: dev.txt
+3. Test: test.txt
+**Command to trigger the training on GPU:**
+
+THEANO_FLAGS='device=cuda,floatX=float32' python train.py --train deu_training.txt --dev deu_dev.txt --test deu_testa.txt
+
+**Results English:**
 
 
 
