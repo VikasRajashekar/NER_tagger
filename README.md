@@ -35,7 +35,7 @@ THEANO_FLAGS='device=cuda,floatX=float32' python train.py --train deu_training.t
 
 # English Dataset:
 
-**For German data set, A small change in loader.py at line number: 15 is necessary. We need to use codecs of type "utf8" because of German special letters.**
+**For German data set, A small change in loader.py at line number: 15 is necessary. We need to use codecs of type "utf8"**
 
 The data set is from the below link:\
 https://github.com/davidsbatista/NER-datasets/tree/master/CONLL2003
