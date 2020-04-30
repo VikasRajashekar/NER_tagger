@@ -32,6 +32,13 @@ THEANO_FLAGS='device=cuda,floatX=float32' python train.py --train deu_training.t
 
 **Results German:**
 
+For default setting as in the github, the Network was able to achieve **FB1 of 66.30** for 100 epocs! \
+accuracy:  94.44%; precision:  73.46%; recall:  60.42%; FB1:  66.30\
+              LOC: precision:  75.98%; recall:  63.76%; FB1:  69.34  991 \
+             MISC: precision:  68.74%; recall:  57.92%; FB1:  62.87  851 \
+              ORG: precision:  77.97%; recall:  55.04%; FB1:  64.53  876 \
+              PER: precision:  71.52%; recall:  64.17%; FB1:  67.64  1257 \
+
 
 # English Dataset:
 
