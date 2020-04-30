@@ -31,7 +31,7 @@ The raw files are converted to txt files as required by the project.
 THEANO_FLAGS='device=cuda,floatX=float32' python train.py --train deu_training.txt --dev deu_dev.txt --test deu_testa.txt
 
 **Results German:**
-
+**Log File:** https://github.com/VikasRajashekar/NER_tagger/blob/master/console_output_German_1.txt \
 For default setting as in the github, the Network was able to achieve **FB1 of 66.30** for 100 epocs! \
 accuracy:  94.44%; precision:  73.46%; recall:  60.42%; FB1:  66.30\
               LOC: precision:  75.98%; recall:  63.76%; FB1:  69.34  991 \
@@ -41,10 +41,12 @@ accuracy:  94.44%; precision:  73.46%; recall:  60.42%; FB1:  66.30\
 
 **Experiments with hyper-parameters:**\
 1. Change word embedding sizxe to 200 from 100 and LSTM size to 200 from 100 for Tokens.\ 
+**Log File:**:https://github.com/VikasRajashekar/NER_tagger/blob/master/console_output_German_2.txt \
 Results as of 29 Epocs.
 Network achieved FB1 score of : **66.07000**\
 
-2. Use settings mentioned in paper: Learning rate of 0.01 and Token embedding size of 64.
+2. Use settings mentioned in paper: Learning rate of 0.01 and Token embedding size of 64.\
+**Log File:**:https://github.com/VikasRajashekar/NER_tagger/blob/master/console_output_German_3.txt \
 Result as of 28 Epocs.
 Network achieved FB1 score of : **67.48000**\
 accuracy:  94.54%; precision:  74.58%; recall:  61.62%; FB1:  67.48 \
@@ -56,8 +58,8 @@ accuracy:  94.54%; precision:  74.58%; recall:  61.62%; FB1:  67.48 \
 
 # English Dataset:
 
-**For English data set, A small change in loader.py at line number: 15 is necessary. We need to use codecs of type "utf8"**
-
+**For English data set, A small change in loader.py at line number: 15 is necessary. We need to use codecs of type "utf8"** \
+**Log File:**:https://github.com/VikasRajashekar/NER_tagger/blob/master/console_output_English.txt \
 The data set is from the below link:\
 https://github.com/davidsbatista/NER-datasets/tree/master/CONLL2003
 
