@@ -49,6 +49,12 @@ Files used:
 THEANO_FLAGS='device=cuda,floatX=float32' python train.py --train train.txt --dev valid.txt --test test.txt
 
 **Results English:**
+**FB1 score of about 83.35**\
+accuracy:  96.55%; precision:  85.58%; recall:  81.23%; FB1:  83.35\
+              LOC: precision:  89.54%; recall:  85.67%; FB1:  87.56  1596\
+             MISC: precision:  80.50%; recall:  73.50%; FB1:  76.84  641\
+              ORG: precision:  79.96%; recall:  77.84%; FB1:  78.89  1617\
+              PER: precision:  89.58%; recall:  83.49%; FB1:  86.43  1507\
 
 
 
