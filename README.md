@@ -12,7 +12,7 @@ Following are the list of commands to be used to get the environment ready for t
 4.conda install -c mila-udem pygpu
 
 # German Dataset:
-
+## Note: Neither in paper or in github I was able to find exact settings/hyper-parameters  used for German language for SOTA results
 
 **For German data set, A small change in loader.py at line number: 15 is necessary. We need to use codecs of type "latin-1" because of German special letters.**
 
@@ -38,6 +38,13 @@ accuracy:  94.44%; precision:  73.46%; recall:  60.42%; FB1:  66.30\
              MISC: precision:  68.74%; recall:  57.92%; FB1:  62.87  851 \
               ORG: precision:  77.97%; recall:  55.04%; FB1:  64.53  876 \
               PER: precision:  71.52%; recall:  64.17%; FB1:  67.64  1257 \
+
+**Experiments with hyper-parameters:**\
+1. Change word embedding sizxe to 200 from 100 and LSTM size to 200 from 100 for Tokens.\
+Network achieved FB1 score of : ** **\
+
+2. Use settings mentioned in paper: Learning rate of 0.01 and Token embedding size of 64.
+Network achieved FB1 score of : ** **\
 
 
 # English Dataset:
