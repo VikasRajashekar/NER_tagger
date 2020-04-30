@@ -56,7 +56,7 @@ accuracy:  94.54%; precision:  74.58%; recall:  61.62%; FB1:  67.48 \
 
 # English Dataset:
 
-**For German data set, A small change in loader.py at line number: 15 is necessary. We need to use codecs of type "utf8"**
+**For English data set, A small change in loader.py at line number: 15 is necessary. We need to use codecs of type "utf8"**
 
 The data set is from the below link:\
 https://github.com/davidsbatista/NER-datasets/tree/master/CONLL2003
