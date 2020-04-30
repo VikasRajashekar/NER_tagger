@@ -40,11 +40,18 @@ accuracy:  94.44%; precision:  73.46%; recall:  60.42%; FB1:  66.30\
               PER: precision:  71.52%; recall:  64.17%; FB1:  67.64  1257 \
 
 **Experiments with hyper-parameters:**\
-1. Change word embedding sizxe to 200 from 100 and LSTM size to 200 from 100 for Tokens.\
-Network achieved FB1 score of : ** **\
+1. Change word embedding sizxe to 200 from 100 and LSTM size to 200 from 100 for Tokens.\ 
+Results as of 29 Epocs.
+Network achieved FB1 score of : **66.07000**\
 
 2. Use settings mentioned in paper: Learning rate of 0.01 and Token embedding size of 64.
-Network achieved FB1 score of : ** **\
+Result as of 28 Epocs.
+Network achieved FB1 score of : **67.48000**\
+accuracy:  94.54%; precision:  74.58%; recall:  61.62%; FB1:  67.48 \
+              LOC: precision:  78.22%; recall:  65.37%; FB1:  71.22  987 \
+             MISC: precision:  79.24%; recall:  51.39%; FB1:  62.34  655 \
+              ORG: precision:  71.60%; recall:  58.50%; FB1:  64.39  1014 \
+              PER: precision:  71.88%; recall:  68.59%; FB1:  70.20  1337\
 
 
 # English Dataset:
